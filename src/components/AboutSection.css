@@ -1,0 +1,263 @@
+/* src/components/AboutSection.css */
+.about-section {
+  padding: 100px 5%;
+  background: #f8fafc;
+  color: #1e293b;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.section-title {
+  font-size: 3rem;
+  font-weight: 800;
+  margin-bottom: 15px;
+  background: linear-gradient(90deg, #1e293b, #475569);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.section-subtitle {
+  font-size: 1.2rem;
+  color: #64748b;
+  margin-bottom: 20px;
+}
+
+.title-line {
+  width: 80px;
+  height: 4px;
+  background: linear-gradient(90deg, #38bdf8, #8b5cf6);
+  margin: 0 auto;
+  border-radius: 2px;
+}
+
+.about-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: start;
+}
+
+.about-text h3 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #1e293b;
+}
+
+.about-text p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #475569;
+  margin-bottom: 20px;
+}
+
+.experience-timeline {
+  margin-top: 40px;
+  padding: 30px;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.experience-timeline h4 {
+  font-size: 1.5rem;
+  margin-bottom: 25px;
+  color: #1e293b;
+}
+
+.timeline-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 25px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.timeline-item:last-child {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+.timeline-year {
+  min-width: 120px;
+  background: linear-gradient(90deg, #38bdf8, #8b5cf6);
+  color: white;
+  padding: 8px 15px;
+  border-radius: 20px;
+  font-weight: 600;
+  text-align: center;
+  margin-right: 20px;
+}
+
+.timeline-content h5 {
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+  color: #1e293b;
+}
+
+.timeline-content p {
+  font-size: 1rem;
+  color: #64748b;
+  margin: 0;
+}
+
+.about-skills h3 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #1e293b;
+}
+
+.skills-container {
+  margin-bottom: 40px;
+}
+
+.skill-item {
+  margin-bottom: 25px;
+}
+
+.skill-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.skill-name {
+  font-weight: 600;
+  color: #1e293b;
+}
+
+.skill-percent {
+  color: #64748b;
+  font-weight: 500;
+}
+
+.skill-bar {
+  height: 10px;
+  background: #e2e8f0;
+  border-radius: 5px;
+  overflow: hidden;
+  position: relative;
+}
+
+.skill-level {
+  height: 100%;
+  border-radius: 5px;
+  transition: width 1.5s ease-in-out;
+  position: relative;
+}
+
+.skill-level::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+  animation: shimmer 2s infinite;
+}
+
+.education-card {
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.education-card h4 {
+  font-size: 1.5rem;
+  margin-bottom: 25px;
+  color: #1e293b;
+}
+
+.education-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 25px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.education-item:last-child {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+.edu-icon {
+  font-size: 2rem;
+  margin-right: 20px;
+  min-width: 60px;
+  text-align: center;
+}
+
+.edu-details h5 {
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+  color: #1e293b;
+}
+
+.edu-details p {
+  font-size: 1rem;
+  color: #64748b;
+  margin: 0;
+}
+
+@keyframes shimmer {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+  .about-content {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  
+  .section-title {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-section {
+    padding: 60px 5%;
+  }
+  
+  .section-title {
+    font-size: 2rem;
+  }
+  
+  .timeline-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .timeline-year {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+  
+  .education-item {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .edu-icon {
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
+}

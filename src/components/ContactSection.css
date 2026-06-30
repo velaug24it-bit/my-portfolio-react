@@ -1,0 +1,331 @@
+/* src/components/ContactSection.css */
+.contact-section {
+  padding: 100px 5%;
+  background: #f8fafc;
+  color: #1e293b;
+}
+
+.contact-section .section-title {
+  background: linear-gradient(90deg, #1e293b, #475569);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.contact-section .section-subtitle {
+  color: #64748b;
+}
+
+.contact-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.info-card {
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  border: 1px solid #e2e8f0;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.info-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
+  border-color: #38bdf8;
+}
+
+.info-icon {
+  font-size: 2.5rem;
+  min-width: 60px;
+  text-align: center;
+}
+
+.info-content h4 {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+  color: #1e293b;
+}
+
+.info-content p {
+  color: #64748b;
+  margin-bottom: 15px;
+  font-size: 1.1rem;
+}
+
+.info-link {
+  color: #38bdf8;
+  text-decoration: none;
+  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  transition: all 0.3s ease;
+}
+
+.info-link:hover {
+  color: #0ea5e9;
+  gap: 10px;
+}
+
+.contact-form-container {
+  background: white;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  border: 1px solid #e2e8f0;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 15px;
+  border: 2px solid #e2e8f0;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  background: #f8fafc;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #38bdf8;
+  background: white;
+  box-shadow: 0 0 0 3px rgba(56, 189, 248, 0.1);
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  color: #94a3b8;
+}
+
+.submit-btn {
+  padding: 15px 30px;
+  background: linear-gradient(90deg, #38bdf8, #8b5cf6);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.submit-btn:hover:not(:disabled) {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(56, 189, 248, 0.3);
+}
+
+.submit-btn:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.success-message {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.success-icon {
+  font-size: 4rem;
+  color: #10b981;
+  margin-bottom: 20px;
+}
+
+.success-message h3 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+  color: #1e293b;
+}
+
+.success-message p {
+  color: #64748b;
+  font-size: 1.1rem;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .contact-content {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  
+  .contact-form-container {
+    padding: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-section {
+    padding: 60px 5%;
+  }
+  
+  .info-card {
+    flex-direction: column;
+    text-align: center;
+    padding: 25px;
+  }
+  
+  .info-icon {
+    margin: 0 auto;
+  }
+}
+/* Add these to your ContactSection.css */
+
+/* Error Message Styles */
+.error-message {
+  background: rgba(239, 68, 68, 0.1);
+  border: 1px solid rgba(239, 68, 68, 0.3);
+  color: #ef4444;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  animation: slideIn 0.3s ease;
+}
+
+.error-icon {
+  font-size: 1.2rem;
+}
+
+/* Success Message Enhancements */
+.success-message {
+  text-align: center;
+  padding: 40px 20px;
+  animation: fadeIn 0.5s ease;
+}
+
+.success-icon {
+  font-size: 4rem;
+  color: #10b981;
+  margin-bottom: 20px;
+  animation: scaleIn 0.5s ease;
+}
+
+.success-message h3 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+  color: #1e293b;
+}
+
+.success-message p {
+  color: #64748b;
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+
+.success-note {
+  font-size: 0.9rem !important;
+  color: #94a3b8 !important;
+  font-style: italic;
+}
+
+/* Form Note */
+.form-note {
+  font-size: 0.85rem;
+  color: #94a3b8;
+  text-align: center;
+  margin-top: 20px;
+  line-height: 1.5;
+}
+
+/* Spinner for loading state */
+.spinner {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  border-top-color: white;
+  animation: spin 1s ease-in-out infinite;
+  margin-right: 10px;
+}
+
+/* Form validation styles */
+.form-group input:valid,
+.form-group textarea:valid {
+  border-color: #10b981;
+  background: rgba(16, 185, 129, 0.05);
+}
+
+.form-group input:invalid:focus,
+.form-group textarea:invalid:focus {
+  border-color: #ef4444;
+}
+
+/* Animations */
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .success-message {
+    padding: 30px 15px;
+  }
+  
+  .success-icon {
+    font-size: 3rem;
+  }
+  
+  .success-message h3 {
+    font-size: 1.5rem;
+  }
+  
+  .error-message {
+    padding: 12px;
+    font-size: 0.9rem;
+  }
+}
