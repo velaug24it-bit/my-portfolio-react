@@ -372,4 +372,14 @@
   .link-text {
     font-size: 0.6rem;
   }
+
+  .projects-cta p {
+    font-size: 1rem;
+  }
+
+  .projects-cta .btn {
+    width: 100%;
+    max-width: none;
+    padding: 12px 20px;
+  }
 }
