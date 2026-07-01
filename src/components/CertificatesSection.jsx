@@ -12,6 +12,7 @@ import mongodbCert from "../assets/certificates/mongodb certificate - Copy.pdf";
 import pythonCert from "../assets/certificates/The Joy of Computing using Python.pdf";
 import aatralCert from "../assets/certificates/certificate aatral.pdf";
 import kalamCert from "../assets/certificates/kalam certificate.jpeg";
+import internshipCert from "../assets/certificates/hig ai automation LLP certificate.pdf";
 
 
 
@@ -73,6 +74,16 @@ const CertificatesSection = () => {
     link: kalamCert,
     icon: <FaTrophy />,
     category: 'competition'
+  },
+  {
+    id: 6,
+    title: 'Internship Completion',
+    issuer: 'HIG AI Automation LLP',
+    date: '2025',
+    credential: 'View Certificate',
+    link: internshipCert,
+    icon: <FaTrophy />,
+    category: 'experience'
   }
 ];
 
@@ -82,14 +93,15 @@ const categories = [
   { id: 'networking', name: 'Networking' },
   { id: 'backend', name: 'Backend' },
   { id: 'data', name: 'Data Science' },
-  { id: 'competition', name: 'Competitions' }
+  { id: 'competition', name: 'Competitions' },
+  { id: 'experience', name: 'Experience' }
 ];
 
 
   const achievements = [
     { number: '5+', label: 'Projects Completed' },
-    { number: '5+', label: 'Happy Clients' },
-    { number: '1', label: 'Years Experience' },
+    { number: '3+', label: 'AI/ML Projects' },
+    { number: '1+', label: 'Years Experience' },
     { number: '5', label: 'Certifications' }
   ];
 

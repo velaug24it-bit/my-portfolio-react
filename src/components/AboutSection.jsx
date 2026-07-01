@@ -3,16 +3,17 @@ import './AboutSection.css';
 
 const AboutSection = () => {
   const skills = [
-    { name: 'HTML', level: 95, color: '#61DAFB' },
-    { name: 'JavaScript', level: 90, color: '#F7DF1E' },
-    { name: 'CSS', level: 85, color: '#339933' },
-    { name: 'React', level: 50, color: '#3178C6' },
-    { name: 'Python', level: 75, color: '#3776AB' },
+    { name: 'React.js', level: 90, color: '#61DAFB' },
+    { name: 'Node.js', level: 80, color: '#3C873A' },
+    { name: 'Python', level: 85, color: '#3776AB' },
+    { name: 'FastAPI', level: 75, color: '#009688' },
+    { name: 'MongoDB / MySQL', level: 80, color: '#47A248' },
+    { name: 'AI/ML', level: 80, color: '#8E44AD' },
     { name: 'UI/UX Design', level: 85, color: '#FF6B6B' },
   ];
 
   const experiences = [
-    { year: '2024-Present', role: ' Web Developer', company: 'HIG AI Inc.' },
+    { year: '2024 - Present', role: 'Web Developer & Student Engineer', company: 'HIG AI Inc. / Personal Projects' },
   ];
 
   return (
@@ -28,20 +29,13 @@ const AboutSection = () => {
           <div className="about-text">
             <h3>My Story</h3>
             <p>
-              I'm a passionate Full Stack Developer with over 1 years of experience 
-              creating digital solutions that make a difference. My journey began 
-              with a curiosity about how websites work, which evolved into a career 
-              I truly love.
+              I’m a Full Stack Developer and AI/ML enthusiast who enjoys turning ideas into practical digital products. My work combines modern frontend development, backend systems, and intelligent features that solve real-world problems.
             </p>
             <p>
-              I specialize in creating responsive web applications with clean code 
-              and intuitive user interfaces. I believe in writing code that's not 
-              only functional but also maintainable and scalable.
+              Recently, I’ve expanded my skill set with React, Node.js, Python, FastAPI, databases, and computer vision projects. I focus on building responsive applications with clean architecture, strong user experience, and reliable performance.
             </p>
             <p>
-              When I'm not coding, you can find me contributing to open-source 
-              projects, learning new technologies, or exploring the outdoors 
-              with my camera.
+              Beyond coding, I enjoy learning new technologies, improving my problem-solving process, and creating projects that make everyday experiences smarter and easier.
             </p>
             
             <div className="experience-timeline">

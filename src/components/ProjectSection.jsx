@@ -15,7 +15,7 @@ const ProjectsSection = () => {
       tags: ['HTML', 'CSS', 'JavaScript', 'Python Flask', 'MySQL', 'Bootstrap'],
       image: 'https://images.unsplash.com/photo-1464226184884-fa280b87c399?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8dmVnZXRhYmxlJTIwZmFybXxlbnwwfHwwfHx8MA%3D%3D',
       github: 'https://github.com/velaug24it-bit/fmarmertobuyer',
-      live: 'https://fmarmertobuyer--velraj0104.replit.app'
+      live: 'https://farmer-to-buyer-website.onrender.com/'
     },
     {
       id: 2,
@@ -25,7 +25,7 @@ const ProjectsSection = () => {
       tags: ['Python', 'TensorFlow', 'React', 'FastAPI', 'OpenCV', 'SCSS'],
       image: 'https://plus.unsplash.com/premium_photo-1682146995114-7e2acb42a0ce?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTMyfHxwbGFudCUyMGlkZW50aWZpY2F0aW9ufGVufDB8fDB8fHww',
       github: 'https://github.com/velaug24it-bit/plantdisease-identification',
-      live: 'https://plant-disease-detector.vercel.app'
+      live: 'https://plantdiseaseidentification-0vss.onrender.com/'
     },
     {
       id: 3,
@@ -49,6 +49,16 @@ const ProjectsSection = () => {
     },
     {
       id: 5,
+      title: 'My Freelance Flow',
+      category: 'fullstack',
+      description: 'A freelance workflow platform designed to help clients and freelancers manage projects, communication, and deliverables in one place.',
+      tags: ['React', 'Node.js', 'Express', 'MongoDB', 'Tailwind CSS', 'JWT'],
+      image: 'https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80',
+      github: 'https://github.com/velaug24it-bit/FreelanceFlow',
+      live: 'https://freelanceflow-marketing.netlify.app/'
+    },
+    {
+      id: 6,
       title: 'Real Estate Dashboard',
       category: 'frontend',
       description: 'Interactive dashboard for real estate analytics with interactive maps, property listings, mortgage calculator, and market trends visualization.',
@@ -97,7 +107,7 @@ const ProjectsSection = () => {
       <div className="container">
         <div className="section-header">
           <h2 className="section-title">My Projects</h2>
-          <p className="section-subtitle">A showcase of my development work</p>
+          <p className="section-subtitle">A showcase of my latest web and AI-driven solutions</p>
           <div className="title-line"></div>
         </div>
 
@@ -178,7 +188,7 @@ const ProjectsSection = () => {
         </div>
 
         <div className="projects-cta">
-          <p>Check out my GitHub for more projects and contributions!</p>
+          <p>Explore my GitHub for more projects, APIs, and machine learning experiments.</p>
           <button 
             className="btn btn-primary"
             onClick={() => window.open('https://github.com/velaug24it-bit', '_blank')}

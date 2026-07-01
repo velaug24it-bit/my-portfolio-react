@@ -10,10 +10,9 @@ const HeroSection = () => {
         <div className="hero-content">
           <h4 className="hero-greeting">Hello, I'm</h4>
           <h1 className="hero-name">Vel Raj</h1>
-          <h2 className="hero-title">Full Stack Developer & UI/UX Designer</h2>
+          <h2 className="hero-title">Full Stack Developer | AI/ML Enthusiast</h2>
           <p className="hero-description">
-            I build exceptional digital experiences that are fast, accessible, 
-            visually appealing, and responsive. Let's bring your ideas to life!
+            I build responsive web applications, intelligent AI-powered features, and modern user experiences using React, Python, Node.js, and cloud-ready tools.
           </p>
           <div className="hero-buttons">
             <a href="#projects" className="btn btn-primary">View My Work</a>
