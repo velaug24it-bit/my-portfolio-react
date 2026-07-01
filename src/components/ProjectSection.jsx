@@ -45,7 +45,7 @@ const ProjectsSection = () => {
       tags: ['React', 'Node.js', 'Express', 'MongoDB', 'Socket.io', 'JWT'],
       image: 'https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80',
       github: 'https://github.com/velaug24it-bit/medique',
-      live: 'https://medireact.vercel.app'
+      live: 'https://6a45183a4621ef0008b1868b--stupendous-tanuki-e4e731.netlify.app/'
     },
     {
       id: 5,
