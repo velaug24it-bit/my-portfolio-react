@@ -67,6 +67,16 @@ const ProjectsSection = () => {
       github: 'https://github.com/velaug24it-bit/brixspace',
       live: 'https://gilded-basbousa-42c1c8.netlify.app/'
     },
+    {
+      id: 7,
+      title: 'ServiceHub',
+      category: 'fullstack',
+      description: 'A modern platform for discovering trusted local service providers, helping users compare options and connect with professionals quickly.',
+      tags: ['React', 'JavaScript', 'Tailwind CSS', 'Responsive UI', 'Local Services'],
+      image: 'https://images.unsplash.com/photo-1521791136064-7986c2920216?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80',
+      github: 'https://github.com/velaug24it-bit',
+      live: 'https://trustylocal-pro.lovable.app/login'
+    },
   ];
 
   const categories = [

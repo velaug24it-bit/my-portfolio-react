@@ -12,7 +12,7 @@ import mongodbCert from "../assets/certificates/mongodb certificate - Copy.pdf";
 import pythonCert from "../assets/certificates/The Joy of Computing using Python.pdf";
 import aatralCert from "../assets/certificates/certificate aatral.pdf";
 import kalamCert from "../assets/certificates/kalam certificate.jpeg";
-import internshipCert from "../assets/certificates/hig ai automation LLP certificate.pdf";
+import internshipCert from "../assets/certificates/WhatsApp Image 2026-07-02 at 10.23.42 AM.jpeg";
 
 
 
