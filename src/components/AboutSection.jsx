@@ -83,6 +83,20 @@ const AboutSection = () => {
                   <p>Francis Xavier Engineering College | 2024-2028</p>
                 </div>
               </div>
+              <div className="education-item">
+                <div className="edu-icon">🏫</div>
+                <div className="edu-details">
+                  <h5>Higher Secondary Certificate (HSC)</h5>
+                  <p>St. Joseph Matriculation Higher Secondary School | 81%</p>
+                </div>
+              </div>
+              <div className="education-item">
+                <div className="edu-icon">🏫</div>
+                <div className="edu-details">
+                  <h5>Secondary School Leaving Certificate (SSLC)</h5>
+                  <p>St. Joseph Matriculation Higher Secondary School | 86%</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
